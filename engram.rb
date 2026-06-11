@@ -5,21 +5,21 @@
 class Engram < Formula
   desc "Auto-memory system for AI coding agents"
   homepage "https://github.com/shiblon/engram"
-  version "0.9.0"
+  version "0.9.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shiblon/engram/releases/download/v0.9.0/engram_0.9.0_darwin_amd64.tar.gz"
-      sha256 "fd8fdb4415db74212963cef20e6976a2199a941bacd4e67f02f95c67904b4c8a"
+      url "https://github.com/shiblon/engram/releases/download/v0.9.1/engram_0.9.1_darwin_amd64.tar.gz"
+      sha256 "a1326e4f6665d0f6b1398810f177857a2c0a925c5dc43096b1001fa717f15cbc"
 
       define_method(:install) do
         bin.install "engram"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shiblon/engram/releases/download/v0.9.0/engram_0.9.0_darwin_arm64.tar.gz"
-      sha256 "8de665a845e4581dcb896ecd92216d6f1622db0eea6ac667869dbfb8f848135f"
+      url "https://github.com/shiblon/engram/releases/download/v0.9.1/engram_0.9.1_darwin_arm64.tar.gz"
+      sha256 "1ba6647ab6db8ca6ab598f2aa4f25bb333438d6d3e04aaf652796d9b485658ea"
 
       define_method(:install) do
         bin.install "engram"
@@ -29,15 +29,15 @@ class Engram < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shiblon/engram/releases/download/v0.9.0/engram_0.9.0_linux_amd64.tar.gz"
-      sha256 "be7906a6c53e1dc4e58baad93e1d477dc441cdbcd2ec9cf06de97634dde3f4fa"
+      url "https://github.com/shiblon/engram/releases/download/v0.9.1/engram_0.9.1_linux_amd64.tar.gz"
+      sha256 "e8fc57e5a23cd4c8cbd1c37d93aae6da8237a1933e5b5edbd7ae6300e673ed8c"
       define_method(:install) do
         bin.install "engram"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shiblon/engram/releases/download/v0.9.0/engram_0.9.0_linux_arm64.tar.gz"
-      sha256 "c1849c984cbe500647919725fb4015fba45e0b829ded5d93c739192963ce44f5"
+      url "https://github.com/shiblon/engram/releases/download/v0.9.1/engram_0.9.1_linux_arm64.tar.gz"
+      sha256 "b036b527e566488f0a41936bee9a35990f8b42e41d016effbf8a810fa492e5c9"
       define_method(:install) do
         bin.install "engram"
       end
